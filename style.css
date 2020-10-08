@@ -1,0 +1,89 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url('textfonts/PlayfairDisplay-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Karla";
+    src: url('textfonts/Karla-Regular.ttf') format('truetype');
+}
+
+html {
+    font-size: 10px;
+    font-family: "Karla", sans-serif;
+}
+
+body {
+    font-size: 1.8rem;
+}
+
+p {
+    line-height: 1.4;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 120rem;
+    padding: 0 2.4rem;
+    margin: 0 auto;
+}
+
+/* HERO */
+
+.hero {
+    color: #fff;
+    background-image: url('images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.hero-box {
+    max-width: 70rem;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Playfair Display", sans-serif;
+    font-size: 8rem;
+    letter-spacing: .2rem;
+    margin-bottom: 3rem;
+}
+
+h5 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .7rem;
+}
+
+p {
+    margin-bottom: 4.2rem;
+}
+
+.btn-white {
+    background-color: #fff;
+    padding: 1.8rem 3rem;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    color: #212529;
+    letter-spacing: .15rem;
+}
