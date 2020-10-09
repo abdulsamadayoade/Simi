@@ -25,6 +25,7 @@
     --white: #fff;
     --black: #000;
     --color-1: #212529;
+    --color-2: #444;
 }
 
 html {
@@ -33,8 +34,8 @@ html {
 }
 
 body {
-    font-size: 1.7rem;
-    color: var(--color-1);
+    font-size: 1.6rem;
+    color: var(--color-2);
 }
 
 p {
