@@ -16,6 +16,17 @@
     src: url('textfonts/Karla-Regular.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: "HK Grotesk";
+    src: url('textfonts/HKGrotesk-SemiBold.otf') format('opentype');
+}
+
+:root {
+    --white: #fff;
+    --black: #000;
+    --color-1: #212529;
+}
+
 html {
     font-size: 10px;
     font-family: "Karla", sans-serif;
@@ -27,10 +38,15 @@ body {
 
 p {
     line-height: 1.4;
+    margin-bottom: 4.2rem;
 }
 
 a {
     text-decoration: none;
+}
+
+ul {
+    list-style: none;
 }
 
 .container {
@@ -39,10 +55,103 @@ a {
     margin: 0 auto;
 }
 
+/* HEADINGS */
+
+h1 {
+    font-family: "Playfair Display", sans-serif;
+    font-size: 8rem;
+    letter-spacing: .2rem;
+    margin-bottom: 3rem;
+}
+
+h5 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .7rem;
+}
+
+
+/* BUTTONS */
+
+.btn {
+    padding: 1.8rem 3rem;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    letter-spacing: .15rem;
+}
+
+.btn-white {
+    background-color: var(--white);
+    color: var(--color-1);
+    transition: all .5s;
+}
+
+.btn-white:hover {
+    background-color: #1E292D;
+    color: var(--white);
+}
+
+.btn-dark {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+/* HEADER */
+
+header {
+    width: 100%;
+    height: 7rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border: 1px solid red;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7rem;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-item:not(:last-child) {
+    margin-right: 2rem;
+}
+
+.nav-link {
+    color: var(--white);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-family: "HK Grotesk", sans-serif;
+    letter-spacing: .1rem;
+}
+
+.logo {
+    color: var(--white);
+    font-size: 2.2rem;
+}
+
+.nav_icons {
+    display: flex;
+}
+
+.nav-icon:not(:last-child) {
+    margin-right: 1.5rem;
+}
+
+.menu-toggle {
+    display: none;
+}
+
 /* HERO */
 
 .hero {
-    color: #fff;
+    color: var(--white);
     background-image: url('images/hero-bg.jpg');
     background-size: cover;
     background-position: center;
@@ -60,30 +169,4 @@ a {
     max-width: 70rem;
     width: 100%;
     text-align: center;
-}
-
-h1 {
-    font-family: "Playfair Display", sans-serif;
-    font-size: 8rem;
-    letter-spacing: .2rem;
-    margin-bottom: 3rem;
-}
-
-h5 {
-    font-size: 2rem;
-    text-transform: uppercase;
-    letter-spacing: .7rem;
-}
-
-p {
-    margin-bottom: 4.2rem;
-}
-
-.btn-white {
-    background-color: #fff;
-    padding: 1.8rem 3rem;
-    text-transform: uppercase;
-    font-size: 1.6rem;
-    color: #212529;
-    letter-spacing: .15rem;
 }
