@@ -61,19 +61,26 @@ section {
 /* REUSABLE CLASSES */
 
 .container,
-.container-medium {
+.container-small {
     max-width: 130rem;
     padding: 0 2.4rem;
     margin: 0 auto;
 }
 
-.container-medium {
+.container-small {
     max-width: 110rem;
     padding: 0 2rem;
 }
 
+.flex {
+    display: flex;
+}
+
 .row {
     display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .align-center {
@@ -82,6 +89,13 @@ section {
 
 .flex-wrap {
     flex-wrap: wrap;
+}
+
+.col-4 {
+    flex-basis: 25%;
+    min-width: 20rem;
+    padding: 1rem;
+    margin-bottom: 5rem
 }
 
 /* HEADINGS */
@@ -128,6 +142,11 @@ h5 {
 }
 
 /* BUTTONS */
+
+.btn-box {
+    text-align: center;
+    margin: 4rem 0;
+}
 
 .btn {
     padding: 1.6rem 3rem;
@@ -281,4 +300,10 @@ header {
 
 .arrival-3 p {
     margin-bottom: 4.2rem;
+}
+
+/* GALLERY */
+
+.gallery {
+    background-image: linear-gradient(rgb(249, 249, 249), rgb(249, 249, 249));
 }
