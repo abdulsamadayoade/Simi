@@ -33,12 +33,12 @@ html {
 }
 
 body {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
+    color: var(--color-1);
 }
 
 p {
-    line-height: 1.4;
-    margin-bottom: 4.2rem;
+    line-height: 1.5;
 }
 
 a {
@@ -49,10 +49,38 @@ ul {
     list-style: none;
 }
 
-.container {
-    max-width: 120rem;
+img {
+    width: 100%;
+}
+
+section {
+    padding: 10rem 0;
+}
+
+/* REUSABLE CLASSES */
+
+.container,
+.container-medium {
+    max-width: 130rem;
     padding: 0 2.4rem;
     margin: 0 auto;
+}
+
+.container-medium {
+    max-width: 110rem;
+    padding: 0 2rem;
+}
+
+.row {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
 }
 
 /* HEADINGS */
@@ -64,17 +92,44 @@ h1 {
     margin-bottom: 3rem;
 }
 
+h2, h3, h4, h5 {
+    font-family: "HK Grotesk", sans-serif;
+}
+
 h5 {
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: .7rem;
 }
 
+.subheading {
+    margin-bottom: 1.9rem;
+    font-size: 2.6rem;
+    font-weight: 400;
+    padding-bottom: .5rem;
+    position: relative;
+}
+
+.subheading::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: .2rem;
+    width: 5rem;
+    background-color: var(--black);
+}
+
+.heading {
+    text-transform: uppercase;
+    font-size: 3.2rem;
+    margin-bottom: 1.4rem;
+}
 
 /* BUTTONS */
 
 .btn {
-    padding: 1.8rem 3rem;
+    padding: 1.6rem 3rem;
     text-transform: uppercase;
     font-size: 1.6rem;
     letter-spacing: .15rem;
@@ -93,7 +148,15 @@ h5 {
 
 .btn-dark {
     background-color: var(--black);
+    border: .2rem solid transparent;
     color: var(--white);
+    transition: all .5s;
+}
+
+.btn-dark:hover {
+    background: transparent;
+    border-color: var(--black);
+    color: var(--black);
 }
 
 /* HEADER */
@@ -105,7 +168,6 @@ header {
     top: 0;
     left: 0;
     z-index: 1;
-    border: 1px solid red;
 }
 
 .navbar {
@@ -120,7 +182,7 @@ header {
 }
 
 .nav-item:not(:last-child) {
-    margin-right: 2rem;
+    margin-right: 2.9rem;
 }
 
 .nav-link {
@@ -128,12 +190,34 @@ header {
     font-size: 1.4rem;
     text-transform: uppercase;
     font-family: "HK Grotesk", sans-serif;
-    letter-spacing: .1rem;
+    letter-spacing: .15rem;
+    padding-bottom: .3rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: .1rem;
+    background-color: var(--white);
+    transform: translateX(-100%);
+    transform-origin: left;
+    transition: all .5s;
+}
+
+.nav-link:hover::after {
+    transform: translateX(0);
+    width: 100%;
 }
 
 .logo {
     color: var(--white);
-    font-size: 2.2rem;
+    font-size: 2.3rem;
+    margin-right: 10rem;
 }
 
 .nav_icons {
@@ -141,7 +225,7 @@ header {
 }
 
 .nav-icon:not(:last-child) {
-    margin-right: 1.5rem;
+    margin-right: 2rem;
 }
 
 .menu-toggle {
@@ -169,4 +253,31 @@ header {
     max-width: 70rem;
     width: 100%;
     text-align: center;
+}
+
+.hero p {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    margin-bottom: 4.2rem;
+}
+
+/* NEW ARRIVALS */
+
+.arrival-1,
+.arrival-2 {
+    margin-right: 4rem;
+}
+
+.arrival-1 img {
+    height: 45rem;
+    width: 35rem;
+}
+
+.arrival-2 img {
+    width: 30.5rem;
+    height: 40rem;
+}
+
+.arrival-3 p {
+    margin-bottom: 4.2rem;
 }
