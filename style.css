@@ -46,6 +46,7 @@ p {
 
 a {
     text-decoration: none;
+    font-size: 1.5rem;
 }
 
 ul {
@@ -109,8 +110,7 @@ h1 {
     margin-bottom: 3rem;
 }
 
-h2, h3, h4, h5 {
-    /* font-family: "HK Grotesk", sans-serif; */
+h2, h3, h4, h5, h6 {
     font-weight: 500;
 }
 
@@ -118,6 +118,11 @@ h5 {
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: .7rem;
+}
+
+h6 {
+    font-size: 1.6rem;
+    text-transform: uppercase;
 }
 
 .subheading {
@@ -391,6 +396,10 @@ footer {
     background-color: var(--black);
 }
 
+footer a {
+    color: var(--color-3);
+}
+
 .newsletter {
     width: 100%;
     max-width: 55rem;
@@ -417,7 +426,7 @@ footer {
 
 .newsletter input[type="email"] {
     margin-right: 3rem;
-    flex: 60%;
+    flex-basis: 60%;
     font-size: 1.5rem;
     font-family: inherit;
     padding: 2rem
@@ -436,4 +445,46 @@ footer {
 
 .newsletter input[type="submit"] {
     border-color: var(--white);
+}
+
+.footer_inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 8rem 0;
+}
+
+.footer_inner-1 {
+    flex-basis: 15%;
+}
+
+.footer_inner-1 ul {
+    display: flex;
+    padding: 1.7rem 0;
+}
+
+.footer_inner ul li:not(:last-child) {
+    margin-right: 1.5rem;
+}
+
+.footer_inner-1 i {
+    font-size: 1.7rem;
+}
+
+.footer_inner-1 i:hover {
+    opacity: .5;
+}
+
+.footer_inner-2 {
+    flex-basis: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_inner-2 h6 {
+    color: var(--white);
+    margin-bottom: 1.7rem;
+}
+
+.footer_inner-2 ul li:not(:last-child) {
+    margin-bottom: .7rem;
 }
