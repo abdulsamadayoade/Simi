@@ -421,7 +421,7 @@ footer a {
 .newsletter input {
     border: none;
     outline: none;;
-    height: 5.5rem;
+    height: 5.3rem;
 }
 
 .newsletter input[type="email"] {
@@ -450,7 +450,7 @@ footer a {
 .footer_inner {
     display: flex;
     justify-content: space-between;
-    padding: 8rem 0;
+    padding: 8.5rem 0;
 }
 
 .footer_inner-1 {
@@ -487,4 +487,31 @@ footer a {
 
 .footer_inner-2 ul li:not(:last-child) {
     margin-bottom: .7rem;
+}
+
+.copyright-container {
+    border-top: 1px solid rgb(48, 48, 48);
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 0 2rem;
+}
+
+.copyright a {
+    border-bottom: 1px solid transparent;
+    transition: border-color .3s;
+}
+
+.copyright a:hover {
+    border-color: var(--color-3);
+}
+
+.payment {
+    display: flex;
+}
+
+.payment img {
+    margin-right: .5rem;
 }
