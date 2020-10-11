@@ -94,6 +94,12 @@ section {
     flex-wrap: wrap;
 }
 
+.col-3 {
+    flex-basis: 30%;
+    min-width: 25rem;
+    margin-bottom: 3rem;
+}
+
 .col-4 {
     flex-basis: 25%;
     min-width: 20rem;
@@ -382,6 +388,34 @@ header {
     letter-spacing: .12rem;
     margin-bottom: .45rem;
 }
+
+/* FEATURES */
+
+.features {
+    padding: 3rem 0 9rem;
+}
+
+.feature_box {
+    display: flex;
+    align-items: center;
+}
+
+.feature_box img {
+    width: 6rem;
+    height: 6rem;
+    margin-right: 1.5rem;
+}
+
+.feature_box h6 {
+    margin-bottom: .5rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.feature_box p {
+    font-size: 1.5rem;
+}
+
 
 /* GALLERY */
 
