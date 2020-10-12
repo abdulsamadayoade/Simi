@@ -8,12 +8,12 @@
 
 @font-face {
     font-family: "Montserrat Regular";
-    src: url('textfont/Montserrat-Regular.ttf') format('truetype');
+    src: url('textfonts/Montserrat-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: "Montserrat Bold";
-    src: url('textfont/Montserrat-Bold.ttf') format('truetype');
+    src: url('textfonts/Montserrat-Bold.ttf') format('truetype');
 }
 
 :root {
