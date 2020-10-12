@@ -32,6 +32,10 @@ body {
     position: relative;
 }
 
+img {
+    width: 100%;
+}
+
 ul {
     list-style: none;
 }
@@ -42,25 +46,42 @@ a {
     color: var(--color-1);
 }
 
+/* REUSABLE CLASSES */
+
+.row {
+    display: flex;
+    align-items: flex-start;
+}
+
+.col-4 {
+    margin-bottom: 2rem;
+}
+
+.col-4:not(:last-child) {
+    margin-right: 2rem;
+}
+
+/* HOMEPAGE STYLES */
+
 .nav-pc {
     position: fixed;
     top: 0;
     left: 0;
     height: 20rem;
     /* background-color: chartreuse; */
-    width: 30%;
+    width: 25%;
     max-width: 30rem;
     height: 100vh;
     padding: 6rem;
 }
 
-.products-container {
+.products_container {
     position: absolute;
     top: 0;
     right: 0;
-    background-color: blue;
-    width: 70%;
-    min-height: 300vh;
+    /* background-color: blue; */
+    width: 78%;
+    min-height: 100vh;
 }
 
 /* SIDE NAV (ON DESKTOP) */
@@ -137,4 +158,12 @@ a {
 .side-nav .social i {
     font-size: 1.8rem;
     margin-right: 2rem;
+}
+
+/* PRODUCT CONTAINER */
+
+.products_container-inner {
+    /* background-color: red; */
+    margin: 2rem;
+    height: 100%;
 }
