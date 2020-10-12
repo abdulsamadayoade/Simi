@@ -4,330 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simi - A Minimal and Stylish Ecommerce Theme</title>
+    <title>Simi - Online Fashion Store</title>
     <link rel="stylesheet" href="fonts/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- HEADER -->
-    <header>
-        <div class="container">
-            <nav class="navbar" id="navbar">
+    <div class="nav-pc">
+        <nav class="side-nav">
+            <a href="index.html" class="logo">Simi</a>
 
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Shop</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Account</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#" class="active nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">How To Order</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
 
-                <a href="index.html" class="logo">SIMI</a>
+            <ul class="nav-list other-links">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">My Account</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Cart(0)</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Wishlist</a>
+                </li>
+            </ul>
 
-                <ul class="nav_icons">
-                    <li class="nav-icon">
-                        <a href="#" class="nav_icons-link">
-                            <img src="images/search.svg" alt="search">
-                        </a>
-                    </li>
-                    <li class="nav-icon">
-                        <a href="#" class="nav_icons-link">
-                            <img src="images/user.svg" alt="user">
-                        </a>
-                    </li>
-                    <li class="nav-icon">
-                        <a href="#" class="nav_icons-link">
-                            <img src="images/heart.svg" alt="wishlist">
-                        </a>
-                    </li>
-                    <li class="nav-icon">
-                        <a href="#" class="nav_icons-link">
-                            <img src="images/shopping-cart.svg" alt="cart">
-                        </a>
-                    </li>
-                </ul>
-
-                <div class="menu-toggle">
-                    <i class="fas fa-bars"></i>
-                    <i class="fas fa-times"></i>
-                </div>
-            </nav>
-        </div>
-    </header>
-
-    <!-- HERO -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-box">
-                <h5>Just Arrived</h5>
-                <h1>Summer Dress</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti praesentium veniam, ea reiciendis
-                    commodi sunt a molestiae! Nihil, impedit suscipit.</p>
-                <a href="#" class="btn btn-white">View Collection</a>
+            <div class="social">
+                <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-instagram"></i>
+                </a>
             </div>
-        </div>
-    </section>
-
-    <!-- NEW ARRIVALS -->
-    <section class="new-arrivals">
-        <div class="container-small">
-            <div class="flex align-center">
-                <div class="arrival-1">
-                    <img src="images/new-arrival-1.jpg" alt="new arrival">
-                </div>
-                <div class="arrival-2">
-                    <img src="images/new-arrival-2.jpg" alt="new arrival">
-                </div>
-                <div class="arrival-3">
-                    <h3 class="subheading">New Arrivals</h3>
-                    <h2 class="heading">Latest Collection</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore.</p>
-                    <a href="#" class="btn btn-dark">Explore Now</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FEATURED -->
-    <section class="featured">
-        <div class="container">
-            <h2 class="heading">Featured Products</h2>
-            <div class="row">
-                <div class="col-4">
-                    <a href="#" class="featured-product">
-                        <div class="featured-item">
-                            <img src="images/product-5.jpg" alt="product">
-                        </div>
-                        <div class="featured-cart">
-                            <p>Add To Cart</p>
-                        </div>
-                    </a>
-                    <a href="#" class="featured-details">
-                        <div>
-                            <h4>Anette Silver Bracelet</h4>
-                            <p>$50</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-4">
-                    <a href="#" class="featured-product">
-                        <div class="featured-item">
-                            <img src="images/product-6.jpg" alt="product">
-                        </div>
-                        <div class="featured-cart">
-                            <p>Add To Cart</p>
-                        </div>
-                    </a>
-                    <a href="#" class="featured-details">
-                        <div>
-                            <h4>Black Sunglass</h4>
-                            <p>$30</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-4">
-                    <a href="#" class="featured-product">
-                        <div class="featured-item">
-                            <img src="images/product-7.jpg" alt="product">
-                        </div>
-                        <div class="featured-cart">
-                            <p>Add To Cart</p>
-                        </div>
-                    </a>
-                    <a href="#" class="featured-details">
-                        <div>
-                            <h4>Diva Lady Handbag</h4>
-                            <p>$250</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-4">
-                    <a href="#" class="featured-product">
-                        <div class="featured-item">
-                            <img src="images/product-8.jpg" alt="product">
-                        </div>
-                        <div class="featured-cart">
-                            <p>Add To Cart</p>
-                        </div>
-                    </a>
-                    <a href="#" class="featured-details">
-                        <div>
-                            <h4>Sea Bracelet</h4>
-                            <p>$50</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FEATURES -->
-    <section class="features">
-        <div class="container-small">
-            <div class="row">
-                <div class="col-3">
-                    <div class="feature_box">
-                        <img src="images/truck.svg" alt="truck">
-                        <div class="feature-details">
-                            <h6>Free Shipping & Return</h6>
-                            <p>Free Shipping over $500</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="feature_box">
-                        <img src="images/offer.svg" alt="offer">
-                        <div class="feature-details">
-                            <h6>Promotional Offers</h6>
-                            <p>Discounts and Coupon Codes</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="feature_box">
-                        <img src="images/customer-service.svg" alt="support">
-                        <div class="feature-details">
-                            <h6>505 5050 5050</h6>
-                            <p>24/7 Available Support</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- GALLERY -->
-    <section class="gallery">
-        <div class="container">
-            <div class="row">
-                <div class="col-4">
-                    <img src="images/gallery-1.jpg" alt="gallery">
-                </div>
-                <div class="col-4">
-                    <img src="images/gallery-2.jpg" alt="gallery">
-                </div>
-                <div class="col-4">
-                    <img src="images/gallery-3.jpeg" alt="gallery">
-                </div>
-                <div class="col-4">
-                    <img src="images/gallery-4.jpg" alt="gallery">
-                </div>
-            </div>
-            <div class="btn-box">
-                <a href="#" class="btn btn-dark">Follow Us On Instagram</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-        <div class="container-small">
-            <div class="newsletter">
-                <h2>Join Our Growing List</h2>
-                <form>
-                    <input type="email" placeholder="Enter your email address" required>
-                    <input type="submit" class="btn btn-white" value="Subscribe">
-                </form>
-            </div>
-            <div class="footer_inner">
-                <div class="footer_inner-1">
-                    <a href="index.html" class="logo">SIMI</a>
-                    <ul>
-                        <li>
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer_inner-2">
-                    <div>
-                        <h6>Support</h6>
-                        <ul>
-                            <li>
-                                <a href="#">FAQs</a>
-                            </li>
-                            <li>
-                                <a href="#">Shipping & Returns</a>
-                            </li>
-                            <li>
-                                <a href="#">Contact Us</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h6>Shop</h6>
-                        <ul>
-                            <li>
-                                <a href="#">Men's Shopping</a>
-                            </li>
-                            <li>
-                                <a href="#">Women's Shopping</a>
-                            </li>
-                            <li>
-                                <a href="#">Discounts</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h6>Company</h6>
-                        <ul>
-                            <li>
-                                <a href="#">Our Story</a>
-                            </li>
-                            <li>
-                                <a href="#">Careers</a>
-                            </li>
-                            <li>
-                                <a href="#">Terms & Conditions</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h6>Contact</h6>
-                        <ul>
-                            <li>
-                                <a href="#">5050 5050 5050</a>
-                            </li>
-                            <li>
-                                <a href="#">info@simi.com</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="copyright-container">
-            <div class="container-small">
-                <div class="copyright">
-                    <p>Designed & Built By <a href="https://abdulsamadayoade.github.io/portfolio">AbdulSamad Ayoade</a>
-                    </p>
-                    <div class="payment">
-                        <img src="images/mastercard.svg" alt="payment">
-                        <img src="images/paypal.svg" alt="payment">
-                        <img src="images/visa.svg" alt="payment">
-                        <img src="images/maestro.svg" alt="payment">
-                        <img src="images/amex.svg" alt="payment">
-                        <img src="images/klarna.svg" alt="payment">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
+        </nav>
+    </div>
+    <div class="products-container"></div>
 </body>
 
 </html>
