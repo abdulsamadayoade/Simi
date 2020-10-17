@@ -11,7 +11,7 @@ Built using HTML, CSS and Javascript. No frameworks or libraries. It contains fi
 1. Homepage
 2. Shop
 3. About
-4. Contact Us
+4. Contact
 5. My Account
 
 
